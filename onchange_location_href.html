@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>location href example</h1>
+    <select id="link" onchange="demo()">
+    <option value="https://google.com">google</option>
+    <option value="https://instagram.com">instagram</option>
+    <option value="https://facebook.com">facebook</option>
+    <option value="https://mouritech.com">mouritech</option>
+    </select>
+    <script>
+      function demo()
+      {
+        let x=document.getElementById('link').value;
+        location.href=x
+      }
+    </script>
+</body>
+</html>

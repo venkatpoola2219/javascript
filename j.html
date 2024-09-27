@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radio Button Example</title>
+</head>
+<body>
+ <form id="myForm">
+  <input type="radio" name="venkat" value="Graduate" onclick="demo()"> Graduate<br>
+  <input type="radio" name="venkat" value=" undergradutae" onclick="demo()"> Undergraduate<br>
+  <input type="radio" name="venkat" value="postgraduate" onclick="demo()">postgraduate<br>
+
+<h1 id="result"></h1>
+ 
+<script>
+  function demo(){
+   let x=document.getElementById("myForm").venkat.value
+   document.getElementById("result").innerHTML=x
+  }
+ 
+</script> 
+
+
+
+</body>
+</html>

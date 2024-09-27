@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <select id="link" onchange="demo()">
+        <option value="">select the state</option>
+    <option >telangana</option>
+    <option >tamilnadu</option>
+    <option>karnataka</option>
+    <option>andhrapradesh</option>
+    </select>
+
+    <select>
+        <option id="txt"></option>
+        <option id="txt1"></option>
+        <option id="txt2"></option>
+    </select>
+   
+    <script>
+      function demo()
+      {
+        let x=document.getElementById('link').value;
+        if(x=="telangana"){
+            document.getElementById("txt").innerHTML="HYDERABAD"
+            document.getElementById("txt1").innerHTML="WARANGAL"
+            document.getElementById("txt2").innerHTML="MEDAK"
+        }
+         else if(x=="tamilnadu"){
+            document.getElementById("txt").innerHTML="CHENNAI"
+            document.getElementById("txt1").innerHTML="OOTY"
+            document.getElementById("txt2").innerHTML="VELUR"
+        }
+        else if(x=="karnataka"){
+            document.getElementById("txt").innerHTML="BENGALORE"
+            document.getElementById("txt1").innerHTML="MANGALORE"
+            document.getElementById("txt2").innerHTML="MYSORE"
+        }
+        else if(x=="andhrapradesh"){
+            document.getElementById("txt").innerHTML="KURNOOL"
+            document.getElementById("txt1").innerHTML="NANDYAL"
+            document.getElementById("txt2").innerHTML="ALLAGADA"
+        }
+        else
+        {
+            document.getElementById("txt").innerHTML="invalid"
+            document.getElementById("txt1").innerHTML="invalid"
+            document.getElementById("txt2").innerHTML="invalid"
+        }
+      }
+    </script>
+</body>
+</html>

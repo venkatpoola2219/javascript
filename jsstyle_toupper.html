@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="txt">venkat</h1>
+   <!-- <select id="link" onchange="demo()">
+    <option>venkat</option>
+    <option>poola</option>
+    <option>aparna</option>
+    <option>swathika</option> 
+    </select>-->
+    <button onclick="demo()"> get value</button>
+   
+    <script>
+        function demo()
+        {
+           let x=document.getElementById('txt').textContent;
+            document.getElementById("txt").textContent=x.toUpperCase();
+           
+          //  document.getElementById("txt").style.color=x
+           // document.getElementById("txt").style.text.toUpperCase()=x
+           
+
+           
+        }
+
+    </script>
+</body>
+</html>

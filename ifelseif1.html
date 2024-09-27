@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <table border="2px">
+        <tr>
+            <td>SALARY</td>
+            <td>TAX AMOUNT</td>
+            <td>HOME SALARY</td>
+        </tr>
+        <tr>
+            <td id="pic"></td>
+            <td id="pic1"></td>
+            <td id="pic2"></td>
+        </tr>
+     </table>    
+    <script>
+        let sal=prompt("enter SALARY")
+        if(sal>30000 && sal<=40000)
+        {
+            let t=sal*5/100
+            document.getElementById("pic").innerHTML=sal
+            document.getElementById("pic1").innerHTML=t
+            document.getElementById("pic2").innerHTML=sal-t
+        }
+        else if(sal>40000 && sal<=50000){
+            let t=sal*8/100;
+            document.getElementById("pic").innerHTML=sal
+            document.getElementById("pic1").innerHTML=t
+            document.getElementById("pic2").innerHTML=sal-t
+        }
+        else if(sal>50000){
+            let t=sal*10/100
+            document.getElementById("pic").innerHTML=sal
+            document.getElementById("pic1").innerHTML=t
+            document.getElementById("pic2").innerHTML=sal-t
+        }
+        else
+        {
+            document.getElementById("pic").innerHTML=sal
+            document.getElementById("pic1").innerHTML="no tax"
+            document.getElementById("pic2").innerHTML=sal
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style>
+    input{
+        color: black;
+        background-color:white;
+        margin: 4px;
+        
+    }
+    #q{
+        border-radius: 10%;
+        height: 257px;
+    }
+    .a{
+        border-radius: 40%;
+    }
+    .c{
+        background-color: black;
+        color: white;
+        border-radius: 40%;
+    }
+    .d{
+        background-color: yellow;
+        border-radius: 40%;
+        color: black;
+    }
+    .e{
+        background-color: red;
+        border-radius: 40%;
+        color: black;
+    }
+    table{
+        background-color:gray;
+        justify-content: center;
+        display: flex;
+    }
+  </style>
+</head>
+<body>
+    <h3 style="text-align: center; color: black;" class="pt-3">CALCULATOR</h3>
+    <div class="container-fluid">
+<div class="row p-4">
+ <div class="col-md-4"></div>
+  <div class=" card p-3 col-md-4 bg-dark" id="q">
+
+    <table border="2px" >
+        <tr>
+            <td>    
+    <form action="">
+        <input type="text" id="scr" class="bg-warning m-3" >
+        </td>
+        </tr>
+        <tr align="center">
+            <td>
+        
+        <input type="button" value="0" onclick="cal(0)" class="a">
+        <input type="button" value="1" onclick="cal(1)" class="a">
+        <input type="button" value="2" onclick="cal(2)" class="a">
+        <input type="button" value="3" onclick="cal(3)" class="a">
+        <input type="button" value="+" onclick="cal('+')" class="c"><br>
+        <input type="button" value="4" onclick="cal(4)" class="a">
+        <input type="button" value="5" onclick="cal(5)" class="a">
+        <input type="button" value="6" onclick="cal(6)" class="a">
+        <input type="button" value="7" onclick="cal(7)" class="a">
+        <input type="button" value="-" onclick="cal('-')" class="c"><br>
+        <input type="button" value="8" onclick="cal(8)" class="a">
+        <input type="button" value="9" onclick="cal(9)" class="a">
+        <input type="button" value="*" onclick="cal('*')" class="c">
+        <input type="button" value="/" onclick="cal('/')" class="c">
+        <input type="button" value="%" onclick="cal('%')" class="c"><br>
+        <input type="button" value="=" onclick="cal1('=')" class="d">
+        <input type="reset" class="e">
+        <input type="button" value="back" onclick="back()" class="c">
+    </form>
+</td>
+</tr>
+</table>
+<div class="col-md-4"></div>
+ </div>
+    </div>
+</div>
+        <script>
+           function cal(num){
+            document.getElementById("scr").value+=num
+           }
+           function cal1(){
+            document.getElementById("scr").value=eval(document.getElementById("scr").value)
+           }
+           function back(){
+            document.getElementById("scr").value= 
+            document.getElementById("scr").value.slice(0,-1)
+           }
+        </script>
+
+  
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>\
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+   <select id="onchange" onchange="demo()">
+    <option></option>
+    <option>HTML</option>
+    <option>CSS</option>
+    <option>JAVASCRIPT</option>
+    <option>REACT</option>
+   </select>
+   <h2 id="txt"></h2>
+   <script>
+    function demo()
+    {
+        let top=document.getElementById("onchange").value;
+        document.getElementById("txt").innerHTML="you selected<span> "+top+" </span>course"
+    }
+   </script>
+</body>
+</html>

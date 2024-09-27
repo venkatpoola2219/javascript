@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="txt">
+    <!-- <h2 id="txt">Hello JavaScript</h2> -->
+    <select id="link" onchange="demo()">
+    <option>red</option>
+    <option>blue</option>
+    <option>green</option>
+    <option>yellow</option>
+    </select>
+   
+    <script>
+        function demo()
+        {
+            let x=document.getElementById('link').value
+          //  document.getElementById("txt").style.color=x
+            document.getElementById("txt").style.background=x
+           
+
+            // if(x=="red")
+            // {
+            //     document.getElementById("txt").style.color="red"
+            // }
+            // else if(x=="blue"){
+            //     document.getElementById("txt").style.color="blue"
+            // }
+            // else if(x=="green"){
+            //     document.getElementById("txt").style.color="green"
+            // }
+            // else if(x=="yellow"){
+            //     document.getElementById("txt").style.color="yellow"
+            // }
+            // else
+            // {
+            //     document.getElementById("txt").style.color="invalid"
+            // }
+        }
+
+    </script>
+</body>
+</html>

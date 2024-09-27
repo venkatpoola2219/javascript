@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1><span id="txt"></span></h1>
+    <select id="link" onchange="demo()">
+        <option value="">select the state</option>
+    <option >telangana</option>
+    <option >tamilnadu</option>
+    <option>karnataka</option>
+    <option>andhrapradesh</option>
+    </select>
+    <script>
+      function demo()
+      {
+        let x=document.getElementById('link').value;
+        if(x=="telangana"){
+            document.getElementById("txt").innerHTML="capital is: HYDERABAD"
+        }
+         else if(x=="tamilnadu"){
+            document.getElementById("txt").innerHTML="capital is: CHENNAI"
+        }
+        else if(x=="karnataka"){
+            document.getElementById("txt").innerHTML="capital is: BENGALORE"
+        }
+        else if(x=="andhrapradesh"){
+            document.getElementById("txt").innerHTML="capital is: KURNOOL"
+        }
+        else
+        {
+            document.getElementById("txt").innerHTML="invalid"
+        }
+      }
+    </script>
+</body>
+</html>

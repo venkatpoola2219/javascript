@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <input type="text" placeholder="age" id="pwd"> <br>
+    <button onclick="demo()">Get age</button>
+    <script>
+        function demo()
+        {
+            let x=document.getElementById("pwd").value;
+            if(isNaN(x))
+            {
+                alert("age should be a number")
+            }
+            // else if(len>8)
+            // {
+            //     alert("pasword should be maximum 8 charecters")
+            // }
+            else
+            {
+                alert("your age is "+x)
+            }
+        }
+    </script>
+    </form>
+</body>
+</html>

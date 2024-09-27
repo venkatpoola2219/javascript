@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <input type="password" id="pwd"> <br>
+    <button onclick="demo()">Get value</button>
+    <script>
+        function demo()
+        {
+            let x=document.getElementById("pwd").value;
+            let len=x.length
+            if(len<5)
+            {
+                alert("pasword should be minimum 5 charecters")
+            }
+            else if(len>8)
+            {
+                alert("pasword should be maximum 8 charecters")
+            }
+            else
+            {
+                alert("thankyou")
+            }
+        }
+    </script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="pwd" onblur="demo2()"> 
+    <script>
+    //     function demo(){
+    //        // alert("focused")
+    //        let x=document.getElementById("pwd")
+    //        if(x.type=="text")
+    //        {
+    //        document.getElementById("pwd").style.background="yellow"
+    //        }
+    //        else
+    //        {
+    //         document.getElementById("pwd").style.background="white"
+    //        }
+    // }
+    function demo2()
+    {
+        let x=document.getElementById("pwd").value;
+        if(x=="")
+        {
+        document.getElementById("pwd").style.background="red"
+        }
+        else
+        {
+            document.getElementById("pwd").style.background="yellow"
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3  style="color:red;" id="txt"></h3>
+    <script>
+        let uid=prompt("enter user id")
+        let pwd=prompt("enter password")
+        let age=prompt("enter age")
+        if(uid=="Javascript" && pwd=="Mouritech" && age>20)
+        {
+            document.getElementById("txt").innerHTML="Authorised"
+        }
+        else{
+            document.getElementById("txt").innerHTML="UnAuthorised"
+        }
+    </script>
+</body>
+</html>

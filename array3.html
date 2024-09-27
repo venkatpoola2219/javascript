@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frt=["apple","mango","pinaple","pomogranate","grapes"]
+        console.log(frt);
+        console.log(frt.toString())
+        console.log(frt.length)
+        document.write(frt+ "<br>")
+        frt.pop()
+       document.write(frt+"<br>") 
+       frt.push("banana")
+       document.write(frt+"<br>")
+       frt.shift()
+       document.write(frt+"<br>") 
+       frt.unshift("apple")
+       document.write(frt+"<br>")
+       frt.splice(3,2,"lemon","kiwi")   //here 3 is adding postion & 2 is remove the adding position of elements & "lemon","kiwi" adding elements
+       document.write(frt +"<br>")
+       let y=frt.slice(4)               // Here 4 means removes the before 4 elements and print 4 th after elements
+       document.write(y)
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="txt"></h2>
+
+    <script>
+        let d=new Date();
+        let h=d.getHours()
+        let m=d.getMinutes()
+        let s=d.getSeconds()
+        let dt=d.getDate()
+        let mn=d.getMonth()+1
+        let yr=d.getFullYear()
+        let day=d.getDay()
+
+        document.getElementById("txt").innerHTML=h+":"+m+":"+s+"<br>"+dt+"-"+mn+"-"+yr+" Day is "+day
+
+       // document.write(h+":"+m+":"+s)
+      
+    </script>
+</body>
+</html>

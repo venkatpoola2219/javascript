@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1 id="t"></H1>
+    <script>
+        let d=new Date()
+        dy=d.getDay()
+        switch(dy){
+            case 1:document.getElementById("t").innerHTML="monday"
+            break;
+            case 2:Document.getElementById("t").innerHTML="tuesday"
+            break;
+            case 3:document.getElementById("t").innerHTML="wedbesday"
+            break;
+            case 4:Document.getElementById("t").innerHTML="thursday"
+            break;
+            case 5:document.getElementById("t").innerHTML="friday"
+            break;
+            case 6:Document.getElementById("t").innerHTML="saturday"
+            break;
+             default:document.getElementById("t").innerHTML="sunday"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <span id="txt"></span>
+</head>
+<body>
+    <input type="text" id="aa" onkeydown="demo()" onkeyup="demo2()">
+    <script>
+        function demo()
+        {
+            document.getElementById("txt").innerHTML="Key pressed"
+        }
+        function demo2()
+        {
+            document.getElementById("txt").innerHTML="Key relased"
+        }
+    </script>
+</body>
+</html>

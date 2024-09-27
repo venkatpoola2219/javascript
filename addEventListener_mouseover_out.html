@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="txt">addEventListener</h1>
+    <button id="btn">out</button>
+    <button id="btn1">over </button>
+   
+    <script>
+      document.getElementById("btn").addEventListener("mouseout",function(){
+     
+        document.getElementById("txt").style.color="red"
+      })
+      document.getElementById("btn1").addEventListener("mouseover",function(){
+     
+     document.getElementById("txt").style.color="green"
+   })
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="box" style="height:200px;
+ width:200px;
+ border:solid blue 2px;">
+ </div>
+<select class="venkat" onchange="demo()">
+    <option>pink</option>
+    <option>green</option>
+    <option>blue</option>
+    <option>yellow</option>
+</select>
+ 
+<script>
+    function demo(){
+        let para=document.querySelector('#box')
+        let color=document.querySelector('.venkat').value
+        para.style.background=color
+    }
+</script>
+</body>
+</html>
+ 

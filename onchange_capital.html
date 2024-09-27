@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="txt"></h1>
+    <select id="link" onchange="demo()">
+        <option value="">select the state</option>
+    <option value="HYDERABAD">telngana</option>
+    <option value="CHENNAI">tamilnadu</option>
+    <option value="BENGALORE">karnataka</option>
+    <option value="KURNOOL">andhrapradesh</option>
+    </select>
+    <script>
+      function demo()
+      {
+        let x=document.getElementById('link').value;
+        document.getElementById("txt").innerHTML="capital city is: <span>"+x+"</span>"
+      }
+    </script>
+</body>
+</html>

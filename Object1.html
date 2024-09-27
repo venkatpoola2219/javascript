@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="txt"></h2>
+    <select>
+        <option id="t1"></option>
+        <option id="t2"></option>
+        <option id="t3"></option>
+    </select>
+    <script>
+         let p={
+            f_name:"venkat",
+            l_name:"rama",
+            age:25,
+            email:"venkatp.in@mouritech.org"
+        }
+        
+    //    document.write("<select> <option >"+p.f_name+"</option >")
+    //    document.write("<option >"+p.l_name+"</option >")
+    //    document.write("<option >"+p.email+"</option >")
+      
+    //    document.write("</option > </select>") 
+
+        document.getElementById("t1").innerHTML=p.f_name
+        document.getElementById("t2").innerHTML=p.l_name
+        document.getElementById("t3").innerHTML=p.age
+      </script>
+        </table>
+
+</body>
+</html>

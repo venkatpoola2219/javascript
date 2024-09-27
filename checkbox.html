@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>checkbox</h1>
+    <h2 id="txt"></h2>
+    <h2 id="txt1"></h2>
+    Hobbies<br>
+    Reading <input type="checkbox" value="Reading" id="c1">
+    Movies <input type="checkbox" value="Movies" id="c2"> <br>
+    <button onclick="demo()"> click</button>
+    <script>
+        function demo(){
+
+            let a=document.getElementById("c1")
+            let b=document.getElementById("c2")
+            let res=""
+            if(a.checked && b.checked){
+            
+                res=c1.value+","+c2.value
+                document.getElementById("txt").innerHTML=res   
+            }
+            else if(a.checked)
+            {
+                res=c1.value
+                document.getElementById("txt").innerHTML=res
+            }
+            else if(b.checked)
+            {
+                res=c2.value
+                document.getElementById("txt").innerHTML=res
+            }
+            else{
+                alert("vv")
+            }
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

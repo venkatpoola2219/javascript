@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2px">
+        <tr>
+            <td id="t1"></td>
+            <td id="t2"></td>
+        </tr>
+        <tr>
+            <td id="t3"></td> 
+            <td id="t4"></td>
+        </tr>
+    </table>
+        <script>
+            let b=1024;
+            let r=prompt("enter gbyte")
+            let res=b*r
+            document.getElementById("t1").innerHTML="GBYTE"
+            document.getElementById("t2").innerHTML="MBYTE"
+
+            document.getElementById("t3").innerHTML=r
+            document.getElementById("t4").innerHTML=res
+        </script>
+ 
+</body>
+</html>

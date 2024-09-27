@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><h4 style="color: purple;">Celcius:</h4> 
+    <input type="text" placeholder="Enter celcius"  id="wt" required>
+    
+    <button  onclick="demo()"> <b>get value</b></button>
+    <h2 id="h1" style="color:red;"></h2>
+    <h1 id="txt"></h1>
+    <script>
+         function demo(){    
+         let a=document.getElementById("wt").value
+         if(isNaN(a)){
+         document.getElementById("h1").innerHTML=`$invalid`
+      }
+      else{
+            let f=(a*1.8)+32
+         document.getElementById("h1").innerHTML=` Celcius=${a} Farenhit=${f}`
+      }
+}
+    </script>
+</body>
+</html>

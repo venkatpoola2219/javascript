@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="t1"></h1>
+   <input type="radio"  value="gradutae" id="txt" onclick="demo()" name="aa">  graduate
+   
+   <input type="radio"  value="undergradutae" id="txt" onclick="demo()" name="aa"> undergradutae
+   
+   <input type="radio"  value="postgraduate" id="txt" onclick="demo()" name="aa"> postgraduate
+   <script>
+    function demo()
+    {
+     let x=document.getElementById("txt").checked;
+    // let x1=document.getElementById("txt1").value;
+    // let x2=document.getElementById("txt2").value;
+     document.getElementById("t1").innerHTML=x
+   //  document.getElementById("t1").innerHTML=x1
+   //  document.getElementById("t1").innerHTML=x2
+
+    }
+   </script>
+   
+</body>
+</html>

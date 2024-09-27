@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="txt"></h1>
+    <input type="text" id="t1">
+    <button onclick="demo()"> click</button>
+    
+    <script>
+        function demo(){
+        let x=Math.round(Math.random()*10)
+        //let y=prompt("enter number")
+        let y=document.getElementById("t1").value
+     if(y>=0 && y<=10)
+      {
+        
+        if(x==y){
+            document.write("random value ="+x +"<br>")
+            document.write("Given value ="+y+"<br>")
+            //document.getElementById("txt").innerHTML="GOOD WORK"
+            document.write("<h1>GOOD WORK</h1>")
+        }
+        else{//document.write(rem)
+            document.write("random value ="+x +"<br>")
+            document.write("Given value ="+y+"<br>")
+            //document.getElementById("txt").innerHTML="not matched"
+            document.write("<h1>NOT MATCHED</h1> ")
+        }
+    }
+    else
+    {
+        document.write("<h1>invalid number</h1>")
+    }
+    }
+    </script>
+</body>
+</html>

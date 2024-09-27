@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <table border="2px">
+    <tr>
+        <td>name</td>
+        <td>age</td>
+        <td>eligibility</td>
+    </tr>
+    <tr>
+        <td id="t1"></td>
+        <td id="t2"></td>
+        <td id="t3"></td>
+    </tr>
+   </table>
+    <script>
+        let n=prompt("enter name")
+        let age=prompt("enter age")
+        document.getElementById("t1").innerHTML=n
+        document.getElementById("t2").innerHTML=age
+        if(age<=18)
+        {
+            document.getElementById("t3").innerHTML=" not Eligible"
+
+        }
+        else{
+            document.getElementById("t3").innerHTML=" eligible"
+        }
+
+    </script>
+</body>
+</html>
